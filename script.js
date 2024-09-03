@@ -1,7 +1,7 @@
 function validateSyntax() {
     let input = document.getElementById('petInput').value;
     let result = '';
-    let alphaNumeric = new RegExp(/^[A-Za-z0-9]+$/i); //expression for alphanumeric numbers
+    let alphaNumeric = new RegExp(/^[0-9]{4}[a-zA-z]+$/i); //expression for alphanumeric numbers
     let colourChange = document.getElementById("result")                         
       
     if (input.startsWith("pet_") && alphaNumeric.test(input.slice(4))) {    // Validates whether alphanumeric and starts with pet_
